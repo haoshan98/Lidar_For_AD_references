@@ -49,7 +49,11 @@ Consensus (RANSAC), resulting in much faster convergence.
 ## Pointcloud Density \& Compression
 * DBSCAN : A density-based algorithm for discovering clusters in large spatial databases with noise (1996) [[pdf](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)]
 * Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection [pdf](https://bdpi.usp.br/bitstream/handle/BDPI/51005/2709770.pdf?sequence=1)
-* Building Maps for Autonomous Navigation Using Sparse Visual SLAM Features [[pdf](https://ygling2008.github.io/papers/IROS2017.pdf)]
+* Building Maps for Autonomous Navigation Using Sparse Visual SLAM Features [[pdf](https://ygling2008.github.io/papers/IROS2017.pdf)] &#x2611; [1 | tetrahedra insertion, deletion and refinement | image input]
+```
+Feature-based incremental SLAM (pose tracking, local bundle adjustment, loop closure, global optimization), 
+real-time 3D dense mapping (dense volumetric representation), and free space extraction (local path planning)
+```
 * STD: Sparse-to-Dense 3D Object Detector for Point Cloud [pdf](https://arxiv.org/abs/1907.10471)
 * Fast semantic segmentation of 3d point clounds with strongly varying density [[pdf](https://www.ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/timo-jan-isprs2016.pdf)]
 * The Perfect Match: 3D Point Cloud Matching with Smoothed Densities [[pdf](https://arxiv.org/abs/1811.06879), [code](https://github.com/zgojcic/3DSmoothNet)]
@@ -58,10 +62,29 @@ Consensus (RANSAC), resulting in much faster convergence.
 * Real-Time Spatio-Temporal LiDAR Point Cloud Compression [[pdf](http://ras.papercept.net/images/temp/IROS/files/1091.pdf)]
 
 ## Registration and Localization
-* A Review of Point Cloud Registration Algorithms for Mobile Robotics 2015 [[pdf](https://hal.archives-ouvertes.fr/hal-01178661/document)]
-* LOAM: Lidar Odometry and Mapping in Real-time RSS 2014 [[pdf](https://ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), [video](https://www.youtube.com/watch?v=8ezyhTAEyHs)]
-* Fast Planar Surface 3D SLAM Using LIDAR 2016 [[pdf](https://lamor.fer.hr/images/50020776/Lenac2017.pdf)]
-* Point Clouds Registration with Probabilistic Data Association IROS 2016 [[git](https://github.com/ethz-asl/robust_point_cloud_registration)]
+* A Review of Point Cloud Registration Algorithms for Mobile Robotics 2015 [[pdf](https://hal.archives-ouvertes.fr/hal-01178661/document)] [-]
+* LOAM: Lidar Odometry and Mapping in Real-time RSS 2014 [[pdf](https://ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), [video](https://www.youtube.com/watch?v=8ezyhTAEyHs)] &#x2611; [1 | mixed of two algorithm, real time]
+```
+-One algorithm performs odometry at a high frequency but low fidelity to estimate velocity
+of the lidar. Another algorithm runs at a frequency of an order of
+magnitude lower for fine matching and registration of the point
+cloud.
+-Achieves both low-drift and low-computational complexity without the need 
+for high accuracy ranging or inertial measurements.
+
+```
+* Fast Planar Surface 3D SLAM Using LIDAR 2016 [[pdf](https://lamor.fer.hr/images/50020776/Lenac2017.pdf)] &#x2611; [2 | register planar surface]
+```
+-Registering and merge sets of (local) planar surface segments to construct global map
+-Preprocess point cloud efficiently by project to three two-dimensional images
+-SLAM backend is based on Exactly Sparse Delayed State Filter as a non-iterative way
+of updating the pose graph and exploiting sparsity of the SLAM information matrix
+```
+* Point Clouds Registration with Probabilistic Data Association IROS 2016 [[git](https://github.com/ethz-asl/robust_point_cloud_registration)] &#x2611; [1 | dense-sparse registration, ready c++ implementation]
+```
+-Aligning a dense point cloud with a sparse one (merge vision-based sensor and laser scanner or two different laser-based sensors)
+-Improvement over the standard Iterative Closest Point (ICP) data association policy
+```
 * Robust LIDAR Localization using Multiresolution Gaussian Mixture Maps for Autonomous Driving IJRR 2017 [[pdf](https://pdfs.semanticscholar.org/7292/1fc6b181cf75790664e482963d982ec9ac48.pdf)], [[Thesis](https://pdfs.semanticscholar.org/a7ce/36bbdf85f1dba6cf16f47ad3799618511960.pdf)]
 * Automatic Merging of Lidar Point-Clouds Using Data from Low-Cost GPS/IMU Systems SPIE 2011 [[pdf](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1081&context=ece_facpub)]
 * Fast and Robust 3D Feature Extraction from Sparse Point Clouds [[pdf](http://jacoposerafin.com/wp-content/uploads/serafin16iros.pdf)]
