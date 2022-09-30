@@ -135,14 +135,14 @@ only relies on matching geometry, robust to changes in the photometric appearanc
 ```
 
 ## Feature Extraction
-* Fast Feature Detection and Stochastic Parameter Estimation of Road Shape using Multiple LIDAR [[pdf](https://www.ri.cmu.edu/pub_files/2008/9/peterson_kevin_2008_1.pdf)]
-* Finding Planes in LiDAR Point Clouds for Real-Time Registration [[pdf](http://ilab.usc.edu/publications/doc/Grant_etal13iros.pdf)]
-* Online detection of planes in 2D lidar [[pdf](https://pdfs.semanticscholar.org/6857/b602dd702664c20febd41dc984451fd97bb3.pdf)]
-* A Fast RANSAC–Based Registration Algorithm for Accurate Localization in Unknown Environments using LIDAR Measurements [[pdf](http://vision.ucla.edu/papers/fontanelliRS07.pdf)]
-* Hierarchical Plane Extraction (HPE): An Efficient Method For Extraction Of Planes From Large Pointcloud Datasets [[pdf](https://pdfs.semanticscholar.org/8217/61a207088e6015de845cc3f9e556e1c94be1.pdf)]
-* A Fast and Accurate Plane Detection Algorithm for Large Noisy Point Clouds Using Filtered Normals and Voxel Growing [[pdf](https://hal-mines-paristech.archives-ouvertes.fr/hal-01097361/document)]
-* SPLATNet: Sparse Lattice Networks for Point Cloud Processing CVPR 2018 [[pdf](https://arxiv.org/abs/1802.08275), [code](https://github.com/NVlabs/splatnet)]
-* PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding, 4D-VISION workshop at ECCV'2020 [[pdf](https://drive.google.com/file/d/1J1KqRQlvMeLThevw_2Erms5IiZWkEwde/view?usp=sharing), [workshop](https://sites.google.com/view/4dvision#h.u1ymvub25j59)]
+* Fast Feature Detection and Stochastic Parameter Estimation of Road Shape using Multiple LIDAR [[pdf](https://www.ri.cmu.edu/pub_files/2008/9/peterson_kevin_2008_1.pdf)] &#x2612; [convolution, Velodyne lidar/radar/laser]
+* Finding Planes in LiDAR Point Clouds for Real-Time Registration [[pdf](http://ilab.usc.edu/publications/doc/Grant_etal13iros.pdf)]  &#x2611; [1 | plane detection - side wall, floor, hallway]
+* Online detection of planes in 2D lidar [[pdf](https://pdfs.semanticscholar.org/6857/b602dd702664c20febd41dc984451fd97bb3.pdf)] &#x2611; [2 | plane detection, aircraft 2d lidar]
+* A Fast RANSAC–Based Registration Algorithm for Accurate Localization in Unknown Environments using LIDAR Measurements [[pdf](https://www.centropiaggio.unipi.it/sites/default/files/Localization-CASE07.pdf)] &#x2612;
+* Hierarchical Plane Extraction (HPE): An Efficient Method For Extraction Of Planes From Large Pointcloud Datasets [[pdf](https://pdfs.semanticscholar.org/8217/61a207088e6015de845cc3f9e556e1c94be1.pdf)] &#x2612; [indoor setting]
+* A Fast and Accurate Plane Detection Algorithm for Large Noisy Point Clouds Using Filtered Normals and Voxel Growing [[pdf](https://hal-mines-paristech.archives-ouvertes.fr/hal-01097361/document)] &#x2611; [2 | street scenes]
+* SPLATNet: Sparse Lattice Networks for Point Cloud Processing CVPR 2018 [[pdf](https://arxiv.org/abs/1802.08275), [code](https://github.com/NVlabs/splatnet)] &#x2611; [1 | lattice spaces and scales convolution, 2D-3D (image-lidar) joint training]
+* PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding, 4D-VISION workshop at ECCV'2020 [[pdf](https://drive.google.com/file/d/1J1KqRQlvMeLThevw_2Erms5IiZWkEwde/view?usp=sharing), [workshop](https://sites.google.com/view/4dvision#h.u1ymvub25j59)] &#x2612;
 
 ## Object detection and Tracking
 * Learning a Real-Time 3D Point Cloud Obstacle Discriminator via Bootstrapping [pdf](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.385.6290)
