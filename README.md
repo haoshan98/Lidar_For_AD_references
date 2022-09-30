@@ -146,16 +146,15 @@ only relies on matching geometry, robust to changes in the photometric appearanc
 * PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding, 4D-VISION workshop at ECCV'2020 [[pdf](https://drive.google.com/file/d/1J1KqRQlvMeLThevw_2Erms5IiZWkEwde/view?usp=sharing), [workshop](https://sites.google.com/view/4dvision#h.u1ymvub25j59)] &#x2612;
 
 ## Object detection and Tracking
-* Learning a Real-Time 3D Point Cloud Obstacle Discriminator via Bootstrapping [pdf](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.385.6290)
-* Terrain-Adaptive Obstacle Detection [[pdf](https://pdfs.semanticscholar.org/92f6/26e75f940a49ee80eaf0344dc493f5d8b2ee.pdf)]
+* Learning a Real-Time 3D Point Cloud Obstacle Discriminator via Bootstrapping [pdf](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.385.6290&rep=rep1&type=pdf)
+* Terrain-Adaptive Obstacle Detection [[pdf](http://ais.informatik.uni-freiburg.de/publications/papers/suger16iros.pdf)]
 * 3D Object Detection from Roadside Data Using Laser Scanners [[pdf](http://www-video.eecs.berkeley.edu/papers/JYT/spie-paper.pdf)]
 * 3D Multiobject Tracking for Autonomous Driving : Masters thesis A S Abdul Rahman
 * Motion-based Detection and Tracking in 3D LiDAR Scans [[pdf](http://ais.informatik.uni-freiburg.de/publications/papers/dewan16icra.pdf)]
-* Lidar-histogram for fast road and obstacle detection [[pdf](http://www.chenliang.me/blog/wp-content/uploads/2017/07/lidarhistogram.pdf)]
-* End-to-end Learning of Multi-sensor 3D Tracking by Detection [pdf](https://arxiv.org/pdf/1806.11534.pdf)
-* Leveraging Heteroscedastic Aleatoric Uncertainties for Robust Real-Time LiDAR 3D Object Detection [pdf](https://arxiv.org/abs/1809.05590)
+* Lidar-histogram for fast road and obstacle detection [[pdf](http://www.chenliang.me/blog/wp-content/uploads/2017/07/lidarhistogram.pdf)] [[git](https://github.com/azurity/lidar-hist)] [-]
+* End-to-end Learning of Multi-sensor 3D Tracking by Detection [pdf](https://arxiv.org/pdf/1806.11534.pdf) &#x2612; [tracking]
+* Leveraging Heteroscedastic Aleatoric Uncertainties for Robust Real-Time LiDAR 3D Object Detection [[pdf](https://arxiv.org/abs/1809.05590), [video](https://www.youtube.com/watch?v=2DzH9COLpkU)]
 * Deep tracking in the wild: End-to-end tracking using recurrent neural networks [[pdf](http://www.robots.ox.ac.uk/~mobile/Papers/2017_IJRR_Dequaire.pdf)]
-* Leveraging Heteroscedastic Aleatoric Uncertainties for Robust Real-Time LiDAR 3D Object Detection [[pdf](https://arxiv.org/abs/1809.05590)], [video](https://www.youtube.com/watch?v=2DzH9COLpkU)]
 * VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection CVPR 2018 [[pdf](https://arxiv.org/abs/1711.06396), [code](https://github.com/tsinghua-rll/VoxelNet-tensorflow)]
 * PIXOR: Real-time 3D Object Detection from Point Clouds CVPR 2018 [[pdf](https://arxiv.org/pdf/1902.06326.pdf)]
 * Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges [[pdf](https://arxiv.org/pdf/1902.07830.pdf)]
