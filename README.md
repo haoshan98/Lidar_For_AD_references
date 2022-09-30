@@ -173,15 +173,19 @@ only relies on matching geometry, robust to changes in the photometric appearanc
 * What You See is What You Get: Exploiting Visibility for 3D Object Detection [[pdf](https://arxiv.org/abs/1912.04986), [video](https://www.youtube.com/watch?v=497OF-otY2k), [project](https://www.cs.cmu.edu/~peiyunh/wysiwyg/index.html)]
 
 ## Classification/Supervised Learning
-* PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation [[link](http://stanford.edu/~rqi/pointnet/), [link2](http://stanford.edu/~rqi/pointnet2/)]
-* SqueezeSeg: Convolutional Neural Nets with Recurrent CRF for Real-Time Road-Object Segmentation from 3D LiDAR Point Cloud [pdf](https://arxiv.org/pdf/1710.07368.pdf)
-* Improving LiDAR Point Cloud Classification using Intensities and Multiple Echoes [[pdf](https://hal.archives-ouvertes.fr/hal-01182604/document)]
-* DepthCN: Vehicle Detection Using 3D-LIDAR and ConvNet [[pdf](http://home.isr.uc.pt/~cpremebida/files_cp/DepthCN_preprint.pdf)]
-* 3D Object Localisation with Convolutional Neural Networks [[Thesis](https://github.com/oscarmcnulty/gta-3d-dataset/blob/master/3D-object-localisation-with-cnns.pdf)]
-* SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation for Road-Object Segmentation from a LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1809.08495.pdf)]
-* PointSeg: Real-Time Semantic Segmentation Based on 3D LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1807.06288.pdf)]
-* Fast LIDAR-based Road Detection Using Fully Convolutional Neural Networks [[pdf](https://arxiv.org/abs/1703.03613)]
-* ChipNet: Real-Time LiDAR Processing for Drivable Region Segmentation on an FPGA [[pdf](https://arxiv.org/pdf/1808.03506.pdf)]
+* PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation [[link](http://stanford.edu/~rqi/pointnet/), [link2](http://stanford.edu/~rqi/pointnet2/)] &#x2611; [1 | segmentation, concat local and global features]
+* SqueezeSeg: Convolutional Neural Nets with Recurrent CRF for Real-Time Road-Object Segmentation from 3D LiDAR Point Cloud [pdf](https://arxiv.org/pdf/1710.07368.pdf) &#x2612; [segment car, perdestrian and cyclist, preprocess of parking car]
+* Improving LiDAR Point Cloud Classification using Intensities and Multiple Echoes [[pdf](https://hal.archives-ouvertes.fr/hal-01182604/document)] &#x2611; [1 | segmentation, not-drivable scenes]
+```
+-Parking lot, around a small water pond, and on an abandoned sport field. 
+-The perceived scenes include trees, bushes, rocks, fences, and tall grass
+```
+* DepthCN: Vehicle Detection Using 3D-LIDAR and ConvNet [[pdf](http://home.isr.uc.pt/~cpremebida/files_cp/DepthCN_preprint.pdf)] &#x2611; [1 | ground removal, obstacles segmentation, 3D-2D projection]
+* 3D Object Localisation with Convolutional Neural Networks [[Thesis](https://github.com/oscarmcnulty/gta-3d-dataset/blob/master/3D-object-localisation-with-cnns.pdf)] [-]
+* SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation for Road-Object Segmentation from a LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1809.08495.pdf)] &#x2612; [segment car, perdestrian and cyclist, preprocess of parking car]
+* PointSeg: Real-Time Semantic Segmentation Based on 3D LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1807.06288.pdf)] &#x2612; [segment car, perdestrian and cyclist, preprocess of parking car]
+* Fast LIDAR-based Road Detection Using Fully Convolutional Neural Networks [[pdf](https://arxiv.org/abs/1703.03613)] &#x2611; [1 | top-view representation, FCN, urban roads]
+* ChipNet: Real-Time LiDAR Processing for Drivable Region Segmentation on an FPGA [[pdf](https://arxiv.org/pdf/1808.03506.pdf)] &#x2611; [1 | spherical-view representation, convolution, simulated quantization, urban roads]
 
 
 ## Maps / Grids / HD Maps / Occupancy grids/ Prior Maps
