@@ -86,16 +86,53 @@ of updating the pose graph and exploiting sparsity of the SLAM information matri
 -Improvement over the standard Iterative Closest Point (ICP) data association policy
 ```
 * Robust LIDAR Localization using Multiresolution Gaussian Mixture Maps for Autonomous Driving IJRR 2017 [[pdf](https://pdfs.semanticscholar.org/7292/1fc6b181cf75790664e482963d982ec9ac48.pdf)], [[Thesis](https://pdfs.semanticscholar.org/a7ce/36bbdf85f1dba6cf16f47ad3799618511960.pdf)]
-* Automatic Merging of Lidar Point-Clouds Using Data from Low-Cost GPS/IMU Systems SPIE 2011 [[pdf](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1081&context=ece_facpub)]
-* Fast and Robust 3D Feature Extraction from Sparse Point Clouds [[pdf](http://jacoposerafin.com/wp-content/uploads/serafin16iros.pdf)]
-* 3DFeat-Net: Weakly Supervised Local 3D Features for Point Cloud Registration [[pdf](https://arxiv.org/abs/1807.09413)]
-* Incremental Segment-Based Localization in 3D Point Clouds [[pdf](http://www.gilitschenski.org/igor/publications/201807-ral-incremental_segmatch/ral18-incremental_segmatch.pdf)]
-* OverlapNet: Loop Closing for LiDAR-based SLAM, RSS 2020 [[pdf](OverlapNet: Loop Closing for LiDAR-based SLAM), [git](https://github.com/PRBonn/OverlapNet), [video](https://www.youtube.com/watch?v=96TBjiay59A)]
-* CorsNet: 3D Point Cloud Registration by Deep Neural Network, ICRA 2020 [[link](https://ieeexplore.ieee.org/abstract/document/8978671)]
-* LPD-Net: 3D Point Cloud Learning for Large-Scale Place Recognition and Environment Analysis ICCV 2019 [[pdf](https://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_LPD-Net_3D_Point_Cloud_Learning_for_Large-Scale_Place_Recognition_and_ICCV_2019_paper.pdf)]
-* DH3D: Deep Hierarchical 3D Descriptors for Robust Large-Scale 6DoF Relocalization [[pdf](https://arxiv.org/abs/2007.09217),[project](https://vision.in.tum.de/research/vslam/dh3d), [video](https://www.youtube.com/watch?v=ZxZiwZugG14)]
-* Localisation using LiDAR and Camera Localisation in low visibility road conditions Master’s thesis 2017 [[pdf](http://publications.lib.chalmers.se/records/fulltext/250431/250431.pdf)]
-* Monocular Camera Localization in 3D LiDAR Maps IROS 2016 [[pdf](http://www.lifelong-navigation.eu/files/caselitz16iros.pdf)]
+&#x2612; [local vehicle localization]
+* Automatic Merging of Lidar Point-Clouds Using Data from Low-Cost GPS/IMU Systems SPIE 2011 [[pdf](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1081&context=ece_facpub)] &#x2611; [5 | Sphere Outlier Removal (SOR)]
+```
+-Identifies outliers and inliers to exist ICP algorithm
+-By utilizing MEMS (microelectromechanical systems)-based GPS/IMU systems, 
+to gather coarse position and pose information at a low cost
+```
+* Fast and Robust 3D Feature Extraction from Sparse Point Clouds [[pdf](http://jacoposerafin.com/wp-content/uploads/serafin16iros.pdf)] &#x2611; [2 | feature extraction, Velodyne sensor]
+```
+-3D scan > flat region removal > surface normal computation > segmentation and 3D features extraction > 3D features
+```
+* 3DFeat-Net: Weakly Supervised Local 3D Features for Point Cloud Registration [[pdf](https://arxiv.org/abs/1807.09413)]  &#x2611; [3 | siamese network]
+```
+-Achieve weak supervision by utilized GPS/INS tagged 3D point clouds
+-Triplet loss for feature alignment
+```
+* Incremental Segment-Based Localization in 3D Point Clouds [[pdf](https://n.ethz.ch/~cesarc/files/RAL2018_rdube.pdf)] &#x2611; [3 | incremental segment matching]
+```
+Accumulates the measurements in a dynamic voxel grid, 
+then selectively updates the point normals affected by the insertion
+```
+* OverlapNet: Loop Closing for LiDAR-based SLAM, RSS 2020 [[pdf](OverlapNet: Loop Closing for LiDAR-based SLAM), [git](https://github.com/PRBonn/OverlapNet), [video](https://www.youtube.com/watch?v=96TBjiay59A)] &#x2611; [3 | detect loop closures for range images]
+```
+-Work with and without odometry information
+-Yaw Estimation
+```
+* CorsNet: 3D Point Cloud Registration by Deep Neural Network, ICRA 2020 [[link](https://ieeexplore.ieee.org/abstract/document/8978671)] [-]
+* LPD-Net: 3D Point Cloud Learning for Large-Scale Place Recognition and Environment Analysis ICCV 2019 [[pdf](https://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_LPD-Net_3D_Point_Cloud_Learning_for_Large-Scale_Place_Recognition_and_ICCV_2019_paper.pdf)]  &#x2611; [3 | point cloud based place retrieval, diff  weather and light conditions]
+```
+-Adaptive local feature extraction module and the graph-based neighborhood aggregation module
+-To extract the local structures and reveal the spatial distribution of local features, 
+generate global descriptor via end-to-end manner
+```
+* DH3D: Deep Hierarchical 3D Descriptors for Robust Large-Scale 6DoF Relocalization [[pdf](https://arxiv.org/abs/2007.09217),[project](https://vision.in.tum.de/research/vslam/dh3d), [video](https://www.youtube.com/watch?v=ZxZiwZugG14)] &#x2611; [3 | siamese network]
+```
+-Learn local descriptor captures multi-level geometric information and channel-wise relations
+-Generate the global descriptor by directly aggregating
+the learned local descriptors with an effective attention mechanism
+```
+* Localisation using LiDAR and Camera Localisation in low visibility road conditions Master’s thesis 2017 [[pdf](http://publications.lib.chalmers.se/records/fulltext/250431/250431.pdf)] [-]
+* Monocular Camera Localization in 3D LiDAR Maps IROS 2016 [[pdf](http://www.lifelong-navigation.eu/files/caselitz16iros.pdf)] &#x2611; [1 | tracks the pose of monocular camera with respect to a given 3D LiDAR map]
+```
+-Employ a visual odometry system based on local bundle adjustment
+to reconstruct a sparse set of 3D points from image features
+-Visual localization advantage: 
+only relies on matching geometry, robust to changes in the photometric appearance of the environment
+```
 
 ## Feature Extraction
 * Fast Feature Detection and Stochastic Parameter Estimation of Road Shape using Multiple LIDAR [[pdf](https://www.ri.cmu.edu/pub_files/2008/9/peterson_kevin_2008_1.pdf)]
