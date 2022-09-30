@@ -47,19 +47,20 @@ Consensus (RANSAC), resulting in much faster convergence.
 
 
 ## Pointcloud Density \& Compression
-* DBSCAN : A density-based algorithm for discovering clusters in large spatial databases with noise (1996) [[pdf](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)]
-* Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection [pdf](https://bdpi.usp.br/bitstream/handle/BDPI/51005/2709770.pdf?sequence=1)
+* DBSCAN : A density-based algorithm for discovering clusters in large spatial databases with noise (1996) [[pdf](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)] &#x2612; 
+* Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection [pdf](https://bdpi.usp.br/bitstream/handle/BDPI/51005/2709770.pdf?sequence=1) &#x2612; 
 * Building Maps for Autonomous Navigation Using Sparse Visual SLAM Features [[pdf](https://ygling2008.github.io/papers/IROS2017.pdf)] &#x2611; [1 | tetrahedra insertion, deletion and refinement | image input]
 ```
 Feature-based incremental SLAM (pose tracking, local bundle adjustment, loop closure, global optimization), 
 real-time 3D dense mapping (dense volumetric representation), and free space extraction (local path planning)
 ```
-* STD: Sparse-to-Dense 3D Object Detector for Point Cloud [pdf](https://arxiv.org/abs/1907.10471)
-* Fast semantic segmentation of 3d point clounds with strongly varying density [[pdf](https://www.ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/timo-jan-isprs2016.pdf)]
-* The Perfect Match: 3D Point Cloud Matching with Smoothed Densities [[pdf](https://arxiv.org/abs/1811.06879), [code](https://github.com/zgojcic/3DSmoothNet)]
-* Deep Compression for Dense Point Cloud Maps [[link](https://ieeexplore.ieee.org/document/9354895)]
-* Improved Deep Point Cloud Geometry Compression [[pdf](https://hal.archives-ouvertes.fr/hal-02910180/document), [git](https://github.com/mauriceqch/pcc_geo_cnn_v2)]
-* Real-Time Spatio-Temporal LiDAR Point Cloud Compression [[pdf](http://ras.papercept.net/images/temp/IROS/files/1091.pdf)]
+* STD: Sparse-to-Dense 3D Object Detector for Point Cloud [pdf](https://arxiv.org/abs/1907.10471) &#x2611; [3 | two stages detection (voxel- and
+point-based), detect car, perdestrian and cyclist]
+* Fast semantic segmentation of 3d point clounds with strongly varying density [[pdf](https://www.ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/timo-jan-isprs2016.pdf)]  &#x2611; [1 | multi-scale pyramid neighborhood approximation, random forest classifier, terrestrial laser scans]
+* The Perfect Match: 3D Point Cloud Matching with Smoothed Densities [[pdf](https://arxiv.org/abs/1811.06879), [code](https://github.com/zgojcic/3DSmoothNet)] &#x2612; [diff angles point cloud matching, siamese network, voxelized smoothed density value (SDV) representation]
+* Deep Compression for Dense Point Cloud Maps [[link](https://ieeexplore.ieee.org/document/9354895)] [-]
+* Improved Deep Point Cloud Geometry Compression [[pdf](https://hal.archives-ouvertes.fr/hal-02910180/document), [git](https://github.com/mauriceqch/pcc_geo_cnn_v2)] &#x2612; [character data]
+* Real-Time Spatio-Temporal LiDAR Point Cloud Compression [[pdf](http://ras.papercept.net/images/temp/IROS/files/1091.pdf)] &#x2611; [4 | stacked frames compression] 
 
 ## Registration and Localization
 * A Review of Point Cloud Registration Algorithms for Mobile Robotics 2015 [[pdf](https://hal.archives-ouvertes.fr/hal-01178661/document)] [-]
