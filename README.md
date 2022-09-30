@@ -49,7 +49,7 @@ Consensus (RANSAC), resulting in much faster convergence.
 ## Pointcloud Density \& Compression
 * DBSCAN : A density-based algorithm for discovering clusters in large spatial databases with noise (1996) [[pdf](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf)] &#x2612; 
 * Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection [pdf](https://bdpi.usp.br/bitstream/handle/BDPI/51005/2709770.pdf?sequence=1) &#x2612; 
-* Building Maps for Autonomous Navigation Using Sparse Visual SLAM Features [[pdf](https://ygling2008.github.io/papers/IROS2017.pdf)] &#x2611; [1 | tetrahedra insertion, deletion and refinement | image input]
+* Building Maps for Autonomous Navigation Using Sparse Visual SLAM Features [[pdf](https://ygling2008.github.io/papers/IROS2017.pdf)] &#x2611; [5 | tetrahedra insertion, deletion and refinement | image input]
 ```
 Feature-based incremental SLAM (pose tracking, local bundle adjustment, loop closure, global optimization), 
 real-time 3D dense mapping (dense volumetric representation), and free space extraction (local path planning)
@@ -60,7 +60,7 @@ point-based), detect car, perdestrian and cyclist]
 * The Perfect Match: 3D Point Cloud Matching with Smoothed Densities [[pdf](https://arxiv.org/abs/1811.06879), [code](https://github.com/zgojcic/3DSmoothNet)] &#x2612; [diff angles point cloud matching, siamese network, voxelized smoothed density value (SDV) representation]
 * Deep Compression for Dense Point Cloud Maps [[link](https://ieeexplore.ieee.org/document/9354895)] [-]
 * Improved Deep Point Cloud Geometry Compression [[pdf](https://hal.archives-ouvertes.fr/hal-02910180/document), [git](https://github.com/mauriceqch/pcc_geo_cnn_v2)] &#x2612; [character data]
-* Real-Time Spatio-Temporal LiDAR Point Cloud Compression [[pdf](http://ras.papercept.net/images/temp/IROS/files/1091.pdf)] &#x2611; [4 | stacked frames compression] 
+* Real-Time Spatio-Temporal LiDAR Point Cloud Compression [[pdf](http://ras.papercept.net/images/temp/IROS/files/1091.pdf)] &#x2611; [5 | stacked frames compression] 
 
 ## Registration and Localization
 * A Review of Point Cloud Registration Algorithms for Mobile Robotics 2015 [[pdf](https://hal.archives-ouvertes.fr/hal-01178661/document)] [-]
@@ -142,7 +142,7 @@ only relies on matching geometry, robust to changes in the photometric appearanc
 * A Fast RANSAC–Based Registration Algorithm for Accurate Localization in Unknown Environments using LIDAR Measurements [[pdf](https://www.centropiaggio.unipi.it/sites/default/files/Localization-CASE07.pdf)] &#x2612;
 * Hierarchical Plane Extraction (HPE): An Efficient Method For Extraction Of Planes From Large Pointcloud Datasets [[pdf](https://pdfs.semanticscholar.org/8217/61a207088e6015de845cc3f9e556e1c94be1.pdf)] &#x2612; [indoor setting]
 * A Fast and Accurate Plane Detection Algorithm for Large Noisy Point Clouds Using Filtered Normals and Voxel Growing [[pdf](https://hal-mines-paristech.archives-ouvertes.fr/hal-01097361/document)] &#x2611; [2 | street scenes]
-* SPLATNet: Sparse Lattice Networks for Point Cloud Processing CVPR 2018 [[pdf](https://arxiv.org/abs/1802.08275), [code](https://github.com/NVlabs/splatnet)] &#x2611; [1 | lattice spaces and scales convolution, 2D-3D (image-lidar) joint training]
+* SPLATNet: Sparse Lattice Networks for Point Cloud Processing CVPR 2018 [[pdf](https://arxiv.org/abs/1802.08275), [code](https://github.com/NVlabs/splatnet)] &#x2611; [1 | lattice spaces and scales convolution, 2D-3D (image-lidar) joint training, building tower vs building podium]
 * PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding, 4D-VISION workshop at ECCV'2020 [[pdf](https://drive.google.com/file/d/1J1KqRQlvMeLThevw_2Erms5IiZWkEwde/view?usp=sharing), [workshop](https://sites.google.com/view/4dvision#h.u1ymvub25j59)] &#x2612;
 
 ## Object detection and Tracking
