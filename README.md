@@ -42,7 +42,7 @@ Consensus (RANSAC), resulting in much faster convergence.
 * Semantic Segmentation of 3D LiDAR Data in Dynamic Scene Using Semi-supervised Learning [[link](https://arxiv.org/abs/1809.00426)]  &#x2611; [3 | dynamic scene segmentation, Velodyne sensor]
 * Learning Hierarchical Semantic Segmentations of LIDAR Data 3DV 2015 [[pdf](https://www.cs.princeton.edu/~funk/3DV15.pdf)] &#x2611; [1 | small object segmentation, pole objects]
 * EfficientLPS: Efficient LiDAR Panoptic Segmentation 2021 [pdf](https://arxiv.org/abs/2102.08009), [video](https://www.youtube.com/watch?v=_ay7ci-Nd0E)  &#x2611; [1 | scan unfloding panoptic segmentation, semantic and instance fusion]
-* 4D Panoptic LiDAR Segmentation 2021 [[pdf](https://arxiv.org/abs/2102.12472)]  &#x2611; [2 | temporal multi-scan panoptic segmentation]
+* 4D Panoptic LiDAR Segmentation 2021 [[pdf](https://arxiv.org/abs/2102.12472)]  &#x2611; [1 | temporal multi-scan panoptic segmentation]
 * urban_road_filter: a real-time LIDAR-based urban road and sidewalk detection algorithm for autonomous vehicles [[git](https://github.com/jkk-research/urban_road_filter), [video](https://www.youtube.com/watch?v=T2qi4pldR-E), [pdf](https://www.mdpi.com/1424-8220/22/1/194/pdf), [code](https://github.com/jkk-research/urban_road_filter)] &#x2611; [1 | real time, road and sidewalk segment, ready implementation in c++]
 
 
