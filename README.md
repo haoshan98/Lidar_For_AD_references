@@ -64,7 +64,7 @@ point-based), detect car, perdestrian and cyclist]
 
 ## Registration and Localization
 * A Review of Point Cloud Registration Algorithms for Mobile Robotics 2015 [[pdf](https://hal.archives-ouvertes.fr/hal-01178661/document)] [-]
-* LOAM: Lidar Odometry and Mapping in Real-time RSS 2014 [[pdf](https://ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), [video](https://www.youtube.com/watch?v=8ezyhTAEyHs)] &#x2611; [1 | mixed of two algorithm, real time]
+* LOAM: Lidar Odometry and Mapping in Real-time RSS 2014 [[pdf](https://ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), [video](https://www.youtube.com/watch?v=8ezyhTAEyHs)] &#x2611; [2 | mixed of two algorithm, real time]
 ```
 -One algorithm performs odometry at a high frequency but low fidelity to estimate velocity
 of the lidar. Another algorithm runs at a frequency of an order of
