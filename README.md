@@ -24,7 +24,7 @@ Consensus (RANSAC), resulting in much faster convergence.
 * Segmentation of Dynamic Objects from Laser Data [[pdf](https://upcommons.upc.edu/bitstream/handle/2117/14119/1259-Segmentation-of-Dynamic-Objects-from-Laser-Data.pdf?sequence=1&isAllowed=y)] &#x2611; [3 | denoising, preprocessing]
 * A Fast Ground Segmentation Method for 3D Point Cloud [[pdf](https://koreascience.kr/article/JAKO201720636500852.pdf)] &#x2611; [2 | ground segment only]
 * Ground Estimation and Point Cloud Segmentation using SpatioTemporal Conditional Random Field [[pdf](https://hal.inria.fr/hal-01579095/document)] &#x2611; [2 | elevated ground modelling, ground segment only]
-* Real-Time Road Segmentation Using LiDAR Data Processing on an FPGA [[pdf](https://arxiv.org/pdf/1711.02757.pdf)] &#x2611; [1 | real time, ground segment only]
+* Real-Time Road Segmentation Using LiDAR Data Processing on an FPGA [[pdf](https://arxiv.org/pdf/1711.02757.pdf)] &#x2611; [4 | real time, ground segment only,  FPGA chip]
 * Efficient Online Segmentation for Sparse 3D Laser Scans [[pdf](http://www.ipb.uni-bonn.de/pdfs/bogoslavskyi16pfg.pdf)], [[git](https://github.com/PRBonn/depth_clustering)]  &#x2611; [1 | real time, ground segment only, ready implementation in c++, Velodyne sensor]
 * CNN for Very Fast Ground Segmentation in Velodyne LiDAR Data [[pdf](https://arxiv.org/pdf/1709.02128.pdf)]  &#x2611; [2 | real time, ground segment only, Velodyne sensor]
 * A Comparative Study of Segmentation and Classification Methods for 3D Point Clouds 2016 Masters Thesis [[pdf](http://publications.lib.chalmers.se/records/fulltext/238602/238602.pdf)] &#x2611; [5 | general reference]
@@ -56,7 +56,7 @@ real-time 3D dense mapping (dense volumetric representation), and free space ext
 ```
 * STD: Sparse-to-Dense 3D Object Detector for Point Cloud [pdf](https://arxiv.org/abs/1907.10471) &#x2611; [3 | two stages detection (voxel- and
 point-based), detect car, perdestrian and cyclist]
-* Fast semantic segmentation of 3d point clounds with strongly varying density [[pdf](https://www.ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/timo-jan-isprs2016.pdf)]  &#x2611; [1 | multi-scale pyramid neighborhood approximation, random forest classifier, terrestrial laser scans]
+* Fast semantic segmentation of 3d point clounds with strongly varying density [[pdf](https://www.ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/timo-jan-isprs2016.pdf)]  &#x2611; [4 | multi-scale pyramid neighborhood approximation, random forest classifier, old dataset]
 * The Perfect Match: 3D Point Cloud Matching with Smoothed Densities [[pdf](https://arxiv.org/abs/1811.06879), [code](https://github.com/zgojcic/3DSmoothNet)] &#x2612; [diff angles point cloud matching, siamese network, voxelized smoothed density value (SDV) representation]
 * Deep Compression for Dense Point Cloud Maps [[link](https://ieeexplore.ieee.org/document/9354895)] [-]
 * Improved Deep Point Cloud Geometry Compression [[pdf](https://hal.archives-ouvertes.fr/hal-02910180/document), [git](https://github.com/mauriceqch/pcc_geo_cnn_v2)] &#x2612; [character data]
