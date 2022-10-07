@@ -185,7 +185,7 @@ only relies on matching geometry, robust to changes in the photometric appearanc
 * SqueezeSegV2: Improved Model Structure and Unsupervised Domain Adaptation for Road-Object Segmentation from a LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1809.08495.pdf)] &#x2612; [segment car, perdestrian and cyclist, preprocess of parking car]
 * PointSeg: Real-Time Semantic Segmentation Based on 3D LiDAR Point Cloud [[pdf](https://arxiv.org/pdf/1807.06288.pdf)] &#x2612; [segment car, perdestrian and cyclist, preprocess of parking car]
 * Fast LIDAR-based Road Detection Using Fully Convolutional Neural Networks [[pdf](https://arxiv.org/abs/1703.03613)] &#x2611; [1 | top-view representation, FCN, urban roads]
-* ChipNet: Real-Time LiDAR Processing for Drivable Region Segmentation on an FPGA [[pdf](https://arxiv.org/pdf/1808.03506.pdf)] &#x2611; [1 | spherical-view representation, convolution, simulated quantization, urban roads]
+* ChipNet: Real-Time LiDAR Processing for Drivable Region Segmentation on an FPGA [[pdf](https://arxiv.org/pdf/1808.03506.pdf)] &#x2611; [2 | spherical-view representation, convolution, simulated quantization, urban roads]
 
 
 ## Maps / Grids / HD Maps / Occupancy grids/ Prior Maps
